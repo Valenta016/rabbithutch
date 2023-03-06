@@ -1,0 +1,179 @@
+body {
+	margin: 0;
+    background-color: #bddee0;
+    }
+  
+  
+  .square {
+	width: 400px;
+	height: 600px; position:centered;
+  }
+  
+  .square.center {
+	margin-top: calc((120vh - 90vmin)/2);
+	margin-left: calc((120vw - 100vmin)/2);
+  }
+  
+	
+  
+  .bg-crimson {
+    background: radial-gradient(#e1ecec, #fd4d47, #99d1f4, #edebef,#d6e265, #b8ba37);
+	
+    background-size: 480% 600%;
+
+    -webkit-animation: bookbackround 5s ease infinite;
+    -o-animation: bookbackround 15s ease infinite;
+    animation: bookbackround 18s ease infinite; z-index: -1 ;
+
+    
+}
+
+  @-webkit-keyframes bookbackround {
+    10%{background-position:60% 91%}
+    50%{background-position:10% 10%}
+    100%{background-position:100% 91%}
+}
+
+
+
+ 
+ 
+  .heart {
+	margin: 5em;
+	animation: 5.9s beatHeart; position:relative; left: 60px; bottom: -70px;z-index:10 ;
+  }
+  
+  @keyframes beatHeart {
+	0% {
+	  transform: scale(1);
+	}
+	25% {
+	  transform: scale(1.1);
+	}
+	40% {
+	  transform: scale(1);
+	}
+	60% {
+	  transform: scale(1.1);
+	}
+	100% {
+	  transform: scale(1);
+	}
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .imagehover{font-family: "kepler-std-semicondensed-cap", serif;margin-bottom: 15px ;
+    font-weight: 300;
+    font-style: italic; font-size: 55px; margin-top: 3%; display: inline-block; position: relative; top:10px; right: -18px;
+    z-index: 0 ; 
+    }
+
+    
+    
+    .line {
+      width: 398px;
+      height: 0;
+      border: 1.5px solid #000000;
+      margin: 3px;
+      display:inline-block;
+      position: relative;top:-90px; right: 3px; z-index:5 ;
+    }
+
+    .line2 {
+      width: 398px;
+      height: 0;
+      border: 1.5px solid #000000;
+      margin: 3px;
+      display:inline-block;
+      position: relative;top:-540px; right: 3px; z-index:6 ;
+    }
+
+
+
+    
+    
+    span:focus,
+    span:hover {
+        outline: 0;
+        color: white;
+        -webkit-transition: color 1s ease;
+        -moz-transition: color 1s ease;
+        -ms-transition: color 1s ease;
+        -o-transition: color 1s ease;
+        transition: color 1s ease;
+        cursor: pointer;}
+      
+    
+
+
+
+ 
+  
+  
+  .bottom-text{font-family: "kepler-std-semicondensed-cap", serif;margin-bottom: 15px ;
+    font-weight: 300;
+    font-style: italic; font-size: 55px; margin-top: 3%; display: inline-block; position: relative;left: 20px; bottom: -120px; vertical-align:bottom;
+    z-index: 8 ;
+    }
+   
+    
+    
+  
+  .bottom-text-small{font-family: "kepler-std-semicondensed-cap", serif;margin-bottom: 15px ;
+    font-weight: 300;
+    font-style: italic; font-size: 35px; margin-top: 3%; display: inline-block; position: relative;left: 270px; top: 50px;vertical-align:bottom;
+    z-index: 7 ;
+    }  
+  
+  
+  .arrow { height: 30%; width: auto; position: relative;left: 50px; bottom: 510px;z-index: 9}
+  #move {
+    height: 50px;
+    width: 50px;
+   
+        position:relative;
+      -webkit-animation: diagonal 5s ;
+      -moz-animation: diagonal 5s;
+      -o-animation: diagonal 5s ;
+      animation: diagonal 6s ;
+  }
+  
+  @-webkit-keyframes diagonal {
+      0%       { transform: translatex(530px) translatey(-670px) }
+      50%      { transform: translatex(320px) translatey(-400px); }
+      300%     { transform: translatex(170px) translatey(570px) }
+  }
+  
+  .award{
+    animation: fadeInAnimation ease 8s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards; position: relative;right: 150px; bottom: 589px; z-index: 80;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+  
